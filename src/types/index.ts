@@ -1,0 +1,3 @@
+export type Category = 'Панельные компьютеры'|'Встраиваемые компьютеры'|'Безвентиляторные компьютеры'|'Промышленные серверы'|'Одноплатные компьютеры'|'Промышленные моноблоки'|'Компактные компьютеры'|'Промышленные дисплеи';
+export interface Product { id:string; slug:string; name:string; sku:string; brand:string; category:Category; price:number; oldPrice?:number; description:string; cpu:string; ram:string; storage:string; interfaces:string[]; ip:string; stock:number; popularity:number; isNew:boolean; image:string; gallery:string[]; features:string[]; specs:Record<string,string>; }
+export interface CartItem { productId:string; quantity:number }
